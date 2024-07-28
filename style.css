@@ -1,0 +1,553 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./images/clubbg3.jpg");
+  background-attachment: fixed;
+}
+
+/* --------------Header Section ------------------ */
+
+.header {
+  width: 100%;
+  color: white;
+  background-color: #cf321d;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.inner-header {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.logo-container img {
+  width: 100px;
+  height: 100px;
+}
+.navigation li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 20px;
+}
+.navigation a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  display: inline-flex;
+}
+.navigation .submenu {
+  position: absolute;
+  width: 200px;
+  margin-top: -50px;
+  opacity: 0;
+  z-index: -999;
+  transition: all ease 0.5s;
+  background-color: #cf321d;
+}
+.navigation li:hover .submenu {
+  z-index: 99;
+  opacity: 1;
+  margin-top: 0;
+  color: black;
+}
+
+.navigation a:hover {
+  color: #1c1920;
+}
+.menubar-icon .fa-bars {
+  font-size: 28px;
+  display: none;
+}
+
+@media screen and (max-width: 810px) {
+  .navigation {
+    display: none;
+  }
+  .menubar-icon .fa-bars {
+    display: block;
+    margin-left: 275px;
+  }
+}
+
+/* --------------HEADING TEXT ------------------ */
+section .heading {
+  width: 100%;
+  height: 420px;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0px;
+  background-color: rgba(207, 207, 207, 0.3);
+}
+section .heading-content {
+  margin: 30px 10px;
+}
+section .heading-content h4 {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  text-shadow: 1px 1px 2px black;
+}
+section .heading-content h1 {
+  font-size: 50px;
+  color: rgb(12, 0, 118);
+  text-align: center;
+  padding: 5px;
+  font-size: 60px;
+  text-shadow: 4px 4px 8px white;
+}
+section .heading-content h1 span {
+  font-size: 66px;
+  color: red;
+  text-shadow: 4px 4px 8px white, 4px 4px 8px white, 4px 4px 8px white;
+}
+section .heading-para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+section .heading-para p {
+  padding: 30px 250px;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+section .heading-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+section .heading-button a {
+  padding: 15px 20px;
+  background-color: #cf321d;
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  transition: 0.6s ease-in-out;
+}
+section .heading-button a:hover {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  section .heading-content h1 span {
+    font-size: 56px;
+  }
+  section .heading-content h1 {
+    font-size: 40px;
+  }
+  section .heading-para p {
+    padding: 30px 20px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section .heading-content h1 span {
+    font-size: 56px;
+  }
+  section .heading-content h1 {
+    font-size: 40px;
+  }
+  section .heading-para p {
+    padding: 30px 20px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+  }
+}
+/* ----------------------- NEWS ------------------------- */
+
+section .news-content {
+  width: 100%;
+  background-color: #cf321d;
+  color: white;
+}
+.news-content .row-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news-content .row-1 .col-1 {
+  flex-basis: 25%;
+  margin: 10px 10px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+}
+.news-content .row-1 .col-2 {
+  flex-basis: 25%;
+  margin: 20px 20px;
+  padding: 10px;
+  border: 2px solid #cccccc;
+}
+.news-content .row-1 .col-3 {
+  flex-basis: 25%;
+  margin: 20px 20px;
+  padding: 10px;
+  border: 2px solid #cccccc;
+}
+.news-content .row-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news-content .row-2 .col-1 {
+  flex-basis: 25%;
+  margin: 20px 20px;
+  padding: 10px;
+  border: 2px solid #cccccc;
+}
+.news-content .row-2 .col-2 {
+  flex-basis: 25%;
+  margin: 20px 20px;
+  padding: 10px;
+  border: 2px solid #cccccc;
+}
+.news-content .row-2 .col-3 {
+  flex-basis: 25%;
+  margin: 20px 20px;
+  padding: 10px;
+  border: 2px solid #cccccc;
+}
+.news-content .row-1 img {
+  width: 100%;
+  height: 200px;
+}
+.news-content .row-2 img {
+  width: 100%;
+  height: 200px;
+}
+.news-content h2 {
+  text-align: center;
+  padding: 20px;
+}
+.news-content h4 {
+  padding: 10px;
+}
+.news-content p {
+  padding: 10px;
+}
+.news-content .news-button {
+  margin: 20px 10px;
+}
+.news-content .news-button a {
+  text-decoration: none;
+  padding: 15px 20px;
+  background-color: #1c1920;
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 900px) {
+  section .news-content img {
+    width: 60%;
+    height: 200px;
+  }
+  section .news-content .row-1 {
+    display: block;
+  }
+  section .news-content .row-2 {
+    display: none;
+  }
+}
+
+/* ----------------------- UPCOMING MATCHES ------------------------- */
+
+section .matches {
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+section .matches h2 {
+  text-align: center;
+  padding: 15px 20px;
+}
+section .matches .row-1 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+section .matches .row-1 .col-1 {
+  flex-basis: 20%;
+  padding: 5px;
+  border: 1px solid rgb(12, 0, 118);
+  background-color: rgb(12, 0, 118);
+  color: white;
+  margin: 0px 5px;
+}
+section .matches .row-1 .col-2 {
+  flex-basis: 20%;
+  padding: 5px;
+  border: 2px solid red;
+  margin: 0px 5px;
+  background-color: red;
+}
+section .matches .row-1 .col-3 {
+  flex-basis: 20%;
+  padding: 5px;
+  border: 1px solid rgb(12, 0, 118);
+  background-color: rgb(12, 0, 118);
+  color: white;
+  margin: 0px 5px;
+}
+section .matches .row-1 .col-4 {
+  flex-basis: 20%;
+  padding: 5px;
+  border: 2px solid red;
+  margin: 0px 5px;
+  background-color: red;
+}
+section .matches .row-2 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0px 5px;
+  color: white;
+}
+section .matches .row-2 .col-1 {
+  flex-basis: 20%;
+  padding: 5px;
+  border: 2px solid red;
+  margin: 0px 5px;
+  background-color: red;
+}
+section .matches .row-2 .col-2 {
+  flex-basis: 20%;
+  padding: 5px;
+  border: 1px solid rgb(12, 0, 118);
+  background-color: rgb(12, 0, 118);
+  color: white;
+  margin: 0px 5px;
+}
+section .matches .row-2 .col-3 {
+  flex-basis: 20%;
+  padding: 5px;
+  border: 2px solid red;
+  margin: 0px 5px;
+  background-color: red;
+}
+section .matches .row-2 .col-4 {
+  flex-basis: 20%;
+  padding: 5px;
+  border: 1px solid rgb(12, 0, 118);
+  background-color: rgb(12, 0, 118);
+  color: white;
+  margin: 0px 5px;
+}
+section .matches .row-1 p {
+  padding: 5px;
+}
+section .matches .row-2 p {
+  padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  section .matches .row-1 {
+    display: block;
+  }
+  section .matches .row-1 .col-1 {
+    margin: 3px 5px;
+  }
+  section .matches .row-1 .col-2 {
+    margin: 3px 5px;
+  }
+  section .matches .row-1 .col-3 {
+    margin: 3px 5px;
+  }
+  section .matches .row-1 .col-4 {
+    margin: 3px 5px;
+  }
+  section .matches .row-1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section .matches .row-1 {
+    display: block;
+  }
+  section .matches .row-1 .col-1 {
+    margin: 3px 5px;
+  }
+  section .matches .row-1 .col-2 {
+    margin: 3px 5px;
+  }
+  section .matches .row-1 .col-3 {
+    margin: 3px 5px;
+  }
+  section .matches .row-1 .col-4 {
+    margin: 3px 5px;
+  }
+  section .matches .row-1 {
+    display: none;
+  }
+}
+
+/* ----------------------- OFFICIAL PARTNERS ------------------------- */
+
+section .partners {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+section .partners h2 {
+  text-align: center;
+  padding: 10px;
+}
+section .partners .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .partners .row img {
+  width: 175px;
+  height: 90px;
+  margin: 20px 0px;
+  padding: 10px 30px;
+}
+section .partnes .row .westonlogo img {
+  width: 250px;
+  height: 300;
+}
+
+@media screen and (max-width: 600px) {
+  section .partners h2 {
+    font-size: 20px;
+  }
+
+  section .partners .row img {
+    width: 130px;
+    height: 65px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section .partners h2 {
+    font-size: 20px;
+  }
+
+  section .partners .row img {
+    width: 130px;
+    height: 65px;
+  }
+}
+/* -------------- FOOTER Section ------------------ */
+
+footer .row {
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  display: flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+footer .row li {
+  list-style-type: none;
+}
+footer .row a {
+  display: block;
+  text-decoration: none;
+  color: azure;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  padding: 1px 0px;
+}
+footer .row .col-1 {
+  flex-basis: 25%;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 20px;
+}
+
+footer .row .col-1 img {
+  width: 90px;
+  height: 90px;
+  margin: 10px 0px;
+}
+
+footer .row .col-1 h3 {
+  margin: 10px 0px;
+}
+
+footer .row .col-2 {
+  flex-basis: 15%;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 20px;
+}
+footer .row .col-2 h3 {
+  margin-bottom: 10px;
+}
+footer .row .col-2 li {
+  padding: 2px 0px;
+  margin: 2px 0px;
+}
+footer .row .col-3 {
+  flex-basis: 15%;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 20px;
+}
+footer .row .email-subscription {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+footer .subscribe-form {
+  margin-top: 20px;
+}
+footer .subscribe-form input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+footer .subscribe-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f39c12;
+  color: white;
+  cursor: pointer;
+  margin: 10px 0px;
+}
+footer .subscribe-form button:hover {
+  background-color: #e67e22;
+}
+
+@media screen and (max-width: 600px) {
+  footer .row {
+    display: block;
+  }
+  footer .email-subscription {
+    display: block;
+  }
+}
