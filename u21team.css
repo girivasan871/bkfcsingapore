@@ -99,12 +99,12 @@
 }
 
 @media screen and (max-width: 810px) {
-  .fixtures .row {
+  .players .row {
     display: block;
   }
-  .fixtures .row .col img {
-    width: 400px;
-    height: 500px;
+  .players .row .col img {
+    width: 275px;
+    height: 275px;
   }
 }
 /* ------------------------------- Footer Section ---------------------------*/
