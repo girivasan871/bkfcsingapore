@@ -25,7 +25,7 @@
         <div class="logo-container">
           <a href="index.html"><img src="./images/clublogo.png" /></a>
         </div>
-        <ul class="navigation">
+        <ul class="navigation" id="menulist">
           <li>
             <a href="./news.html">NEWS</a>
           </li>
@@ -169,7 +169,11 @@
           </li>
         </ul>
         <div class="menubar-icon">
-          <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+          <i
+            class="fa-solid fa-bars"
+            onclick="togglemenu()"
+            style="color: #ffffff"
+          ></i>
         </div>
       </div>
     </div>
@@ -437,6 +441,17 @@
           document.getElementById("email").value = ""; // Clear the input field
         } else {
           alert("Please enter a valid email address.");
+        }
+      }
+
+      let menulist = document.getElementById("menulist");
+      menulist.style.maxHeight = "0px";
+
+      function togglemenu() {
+        if (menulist.style.maxHeight == "0px") {
+          menulist.style.maxHeight = "520px";
+        } else {
+          menulist.style.maxHeight = "0px";
         }
       }
     </script>

@@ -32,6 +32,9 @@ body {
   width: 100px;
   height: 100px;
 }
+.navigation {
+  display: flex;
+}
 .navigation li {
   list-style-type: none;
   display: inline-block;
@@ -70,7 +73,20 @@ body {
 
 @media screen and (max-width: 1100px) {
   .navigation {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background-color: #cf321d;
+    overflow: hidden;
+  }
+  .navigation .submenu {
     display: none;
+  }
+  .navigation li:hover .submenu {
+    display: block;
   }
   .menubar-icon .fa-bars {
     display: block;
