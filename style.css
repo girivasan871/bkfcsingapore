@@ -23,8 +23,8 @@ body {
   font-family: "Bricolage Grotesque", sans-serif;
 }
 .inner-header {
+  width: 100%;
   display: flex;
-  height: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -38,7 +38,7 @@ body {
 .navigation li {
   list-style-type: none;
   display: inline-block;
-  padding: 20px;
+  padding: 15px;
 }
 .navigation a {
   text-decoration: none;
@@ -50,7 +50,7 @@ body {
 .navigation .submenu {
   position: absolute;
   width: 200px;
-  margin-top: -50px;
+  margin: 25px 0px;
   opacity: 0;
   z-index: -999;
   transition: all ease 0.5s;
@@ -70,20 +70,28 @@ body {
   font-size: 28px;
   display: none;
 }
-
+#menulist {
+  transition: all 0.5s;
+}
 @media screen and (max-width: 1100px) {
   .navigation {
     position: absolute;
-    top: 100px;
+    height: 300vh;
+    top: 120px;
     left: 0;
     right: 0;
     flex-direction: column;
     text-align: center;
     background-color: #cf321d;
     overflow: hidden;
+    text-align: left;
+  }
+  .navigation li {
+    transition: 0.5s ease-in-out;
   }
   .navigation .submenu {
     display: none;
+    margin: 25px 0;
   }
   .navigation li:hover .submenu {
     display: block;
@@ -93,7 +101,11 @@ body {
     margin-left: 125px;
   }
 }
-
+.player {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  padding: 20px;
+}
 /* --------------HEADING TEXT ------------------ */
 section .heading {
   width: 100%;
@@ -210,19 +222,16 @@ section .news-content {
   flex-basis: 25%;
   margin: 10px 10px;
   padding: 10px;
-  border: 1px solid #cccccc;
 }
 .news-content .row-1 .col-2 {
   flex-basis: 25%;
   margin: 20px 20px;
   padding: 10px;
-  border: 2px solid #cccccc;
 }
 .news-content .row-1 .col-3 {
   flex-basis: 25%;
   margin: 20px 20px;
   padding: 10px;
-  border: 2px solid #cccccc;
 }
 .news-content .row-2 {
   width: 100%;
@@ -234,27 +243,24 @@ section .news-content {
   flex-basis: 25%;
   margin: 20px 20px;
   padding: 10px;
-  border: 2px solid #cccccc;
 }
 .news-content .row-2 .col-2 {
   flex-basis: 25%;
   margin: 20px 20px;
   padding: 10px;
-  border: 2px solid #cccccc;
 }
 .news-content .row-2 .col-3 {
   flex-basis: 25%;
   margin: 20px 20px;
   padding: 10px;
-  border: 2px solid #cccccc;
 }
 .news-content .row-1 img {
   width: 100%;
-  height: 200px;
+  aspect-ratio: 16 / 9;
 }
 .news-content .row-2 img {
   width: 100%;
-  height: 200px;
+  aspect-ratio: 16 / 9;
 }
 .news-content h2 {
   text-align: center;
@@ -279,7 +285,7 @@ section .news-content {
 @media screen and (max-width: 900px) {
   section .news-content img {
     width: 60%;
-    height: 200px;
+    aspect-ratio: 16 / 9;
   }
   section .news-content .row-1 {
     display: block;
