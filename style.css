@@ -77,7 +77,7 @@ body {
   .navigation {
     position: absolute;
     height: 300vh;
-    top: 100px;
+    top: 120px;
     left: 0;
     right: 0;
     flex-direction: column;
