@@ -18,6 +18,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+      integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <marquee style="background-color: black; color: white">
@@ -39,14 +45,10 @@
             <a href="#">FIXTURES</a>
             <ul class="submenu">
               <li>
-                <a href="./1stfixtures.html"
-                  >1-ST TEAM FIXTURES</a
-                >
+                <a href="./1stfixtures.html">1-ST TEAM FIXTURES</a>
               </li>
               <li>
-                <a href="./u21fixtures.html"
-                  >U-21 TEAM FIXTURES</a
-                >
+                <a href="./u21fixtures.html">U-21 TEAM FIXTURES</a>
               </li>
               <li>
                 <a href="./u17fixtures.html">U-17 FIXTURES</a>
@@ -55,14 +57,10 @@
                 <a href="./u15fixtures.html">U-15 FIXTURES</a>
               </li>
               <li>
-                <a href="./womensfixtures.html"
-                  >WOMEM'S FIXTURES</a
-                >
+                <a href="./womensfixtures.html">WOMEM'S FIXTURES</a>
               </li>
               <li>
-                <a href="./sylfixtures.html"
-                  >SINGAPORE YOUTH LEAGUE</a
-                >
+                <a href="./sylfixtures.html">SINGAPORE YOUTH LEAGUE</a>
               </li>
             </ul>
           </li>
@@ -70,14 +68,10 @@
             <a href="#">TICKETS</a>
             <ul class="submenu">
               <li>
-                <a href="./matchdaytickets.html"
-                  >MATCH DAY TICKETS</a
-                >
+                <a href="./matchdaytickets.html">MATCH DAY TICKETS</a>
               </li>
               <li>
-                <a href="./clubmembership.html"
-                  >CLUB MEMBERSHIP</a
-                >
+                <a href="./clubmembership.html">CLUB MEMBERSHIP</a>
               </li>
             </ul>
           </li>
@@ -139,9 +133,7 @@
                 <a href="./mainsponsers.html">MAIN SPONSERS</a>
               </li>
               <li>
-                <a href="./communitypartners.html"
-                  >COMMUNITY PARTNERS</a
-                >
+                <a href="./communitypartners.html">COMMUNITY PARTNERS</a>
               </li>
               <li>
                 <a href="./sponsershipopportunities.html"
@@ -149,19 +141,13 @@
                 >
               </li>
               <li>
-                <a href="./volunteerwithus.html"
-                  >VOLUNTEER WITH US</a
-                >
+                <a href="./volunteerwithus.html">VOLUNTEER WITH US</a>
               </li>
               <li>
-                <a href="./letscommunity.html"
-                  >LET'S COMMUNITY!</a
-                >
+                <a href="./letscommunity.html">LET'S COMMUNITY!</a>
               </li>
               <li>
-                <a href="./affiliatedclubs.html"
-                  >AFFILIATED CLUBS</a
-                >
+                <a href="./affiliatedclubs.html">AFFILIATED CLUBS</a>
               </li>
             </ul>
           </li>
@@ -209,9 +195,9 @@
         <div class="heading-content">
           <h4>Welcome to</h4>
           <h1>
-            <span> Balestier Khalsa </span><br />
-            Football Club
+            <span id="head-1"> </span>
           </h1>
+          <h1 id="head-2"></h1>
         </div>
         <div class="heading-para">
           <p>
@@ -492,6 +478,16 @@
           menulist.style.maxHeight = "0px";
         }
       }
+
+      var typed = new Typed("#head-1", {
+        strings: ["Balestier Khalsa", "Balestier Khalsa"],
+        typeSpeed: 130,
+        looped: true,
+      });
+      var typed = new Typed("#head-2", {
+        strings: ["Football Club", "Football Club"],
+        typeSpeed: 130,
+      });
     </script>
   </body>
 </html>

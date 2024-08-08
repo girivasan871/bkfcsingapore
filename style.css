@@ -521,7 +521,7 @@ footer .row {
   align-items: center;
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 10%;
+  animation-range: entry 0% cover 5%;
 }
 footer .row li {
   list-style-type: none;

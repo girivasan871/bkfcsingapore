@@ -11,8 +11,8 @@
   font-family: "Bricolage Grotesque", sans-serif;
 }
 .inner-header {
+  width: 100%;
   display: flex;
-  height: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -20,10 +20,13 @@
   width: 100px;
   height: 100px;
 }
+.navigation {
+  display: flex;
+}
 .navigation li {
   list-style-type: none;
   display: inline-block;
-  padding: 20px;
+  padding: 15px;
 }
 .navigation a {
   text-decoration: none;
@@ -35,7 +38,7 @@
 .navigation .submenu {
   position: absolute;
   width: 200px;
-  margin-top: -50px;
+  margin: 25px 0px;
   opacity: 0;
   z-index: -999;
   transition: all ease 0.5s;
@@ -55,15 +58,41 @@
   font-size: 28px;
   display: none;
 }
-
-@media screen and (max-width: 810px) {
+#menulist {
+  transition: all 0.5s;
+}
+@media screen and (max-width: 1100px) {
   .navigation {
+    position: absolute;
+    height: 300vh;
+    top: 120px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background-color: #cf321d;
+    overflow: hidden;
+    text-align: left;
+  }
+  .navigation li {
+    transition: 0.5s ease-in-out;
+  }
+  .navigation .submenu {
     display: none;
+    margin: 25px 0;
+  }
+  .navigation li:hover .submenu {
+    display: block;
   }
   .menubar-icon .fa-bars {
     display: block;
-    margin-left: 275px;
+    margin-left: 125px;
   }
+}
+.player {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  padding: 20px;
 }
 
 /* ------------------------------- Fixture Section ---------------------------*/
